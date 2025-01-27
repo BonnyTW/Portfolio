@@ -28,11 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const botToken = '7802841628:AAFOVeP9IHT0l3jL36SXJJskypAuX_Zj32U'; 
     const chatId = '7335067649'; 
 =======
-    const telegram = document.getElementById('telegram').value;  // Get Telegram username
+    const telegram = document.getElementById('telegram').value;  
     const message = document.getElementById('message').value;
 
-    const botToken = '7802841628:AAFOVeP9IHT0l3jL36SXJJskypAuX_Zj32U'; // Your bot token
-    const chatId = '7335067649'; // Replace with the chat ID you got
+    const botToken = '7802841628:AAFOVeP9IHT0l3jL36SXJJskypAuX_Zj32U'; 
+    const chatId = '7335067649'; 
 >>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
 
     const text = `New message from ${name} (Telegram: @${telegram}):\n\n${message}`;
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <<<<<<< HEAD
           contactForm.reset(); 
 =======
-          contactForm.reset(); // Reset the form after sending the message
+          contactForm.reset(); 
 >>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
         } else {
           alert('There was an error sending your message. Please try again.');
