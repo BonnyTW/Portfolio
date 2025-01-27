@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="logo"><span>&lt;B&#248;nny&gt;</span></a>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+  </header>
+
+ <!-- Home Section -->
+<section class="home" id="home">
+  <div class="container">
+    <div class="content">
+      <a href="#contact">
+        <img src="pp.jpg" alt="Bonny Tilahun" class="profile-photo">
+      </a>
+      <p>Hi, I'm <span id="typed-text"></span></p>
+      <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+<section class="about" id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm <strong>Bonny Tilahun</strong>, a Computer Science and Engineering student at Adama Science and Technology University. 
+      I am deeply passionate about technology, programming, and software development. My interests span across designing and developing innovative software applications, tackling challenging technical problems, and exploring emerging technologies.
+    </p>
+    <br>
+    <p>
+      I enjoy working on projects that bring impactful solutions to real-world problems, and I am particularly fascinated by creating tools and applications that improve efficiency and user experience. 
+      Some of my key technical skills include Java, JavaScript, HTML, CSS,Database and Python.
+    </p>
+    <br>
+    <p>
+      I'm always eager to expand my knowledge by learning about the latest advancements in the tech field. My goal is to grow as a developer while contributing to projects that inspire innovation and make a positive impact on society.
+    </p>
+  </div>
+</section>
+
+  
+
+  <!-- Portfolio Section -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <h2>My Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <a href="https://github.com/BonnyTW/Chatbot_Socket" target="_blank">
+          <img src="imagechbot.png" alt="Chatbot using Java Socket">
+        </a>
+        <h3 class="project-name">Chatbot using Java Socket</h3>
+      </div>
+      <div class="card">
+        <a href="https://github.com/BonnyTW/Library-Managment-System" target="_blank">
+          <img src="image.png" alt="Library Management System Java GUI">
+        </a>
+        <h3 class="project-name">Library Management System using Java GUI</h3>
+      </div>
+      <div class="card">
+        <a href="https://github.com/BonnyTW/Cafe-MS" target="_blank">
+          <img src="cms.png" alt="Cafe Management System Java GUI">
+        </a>
+        <h3 class="project-name">Cafe Management System using Java GUI</h3>
+      </div>
+      <div class="card">
+        <a href="https://github.com/BonnyTW/Registeral-System" target="_blank">
+          <img src="register.png" alt="Registration System using Java Servlet">
+        </a>
+        <h3 class="project-name">Registration System using Java Servlet</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out through the following platforms:</p>
+      <div class="contact-links">
+        <a href="https://github.com/BonnyTW" target="_blank" class="btn" aria-label="GitHub">
+          <i class='bx bxl-github'></i> GitHub
+        </a>
+        <a href="https://t.me/Bonnytw" target="_blank" class="btn" aria-label="Telegram">
+          <i class='bx bxl-telegram'></i> Telegram
+        </a>
+      </div>
+     <form id="contactForm">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="text" id="telegram" placeholder="Your Telegram Username" required> <!-- Telegram field -->
+  <textarea id="message" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="Jscript.js"></script>
+</body>
+</html>
