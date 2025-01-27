@@ -8,13 +8,8 @@
 
 body {
   line-height: 1.6;
-<<<<<<< HEAD
   color: #fff; 
   background-color: #000; 
-=======
-  color: #fff; 
-  background-color: #000; 
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
 }
 
 a {
@@ -42,22 +37,14 @@ a {
   background: #0056b3;
 }
 
-<<<<<<< HEAD
 
-=======
-/* Profile Photo Container to hold both photo and the overlay text */
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
 .profile-photo-container {
   position: relative;
   display: inline-block;
 }
 
 .profile-photo {
-<<<<<<< HEAD
   width: 200px; 
-=======
-  width: 200px; 
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
@@ -66,7 +53,6 @@ a {
 }
 
 .profile-photo:hover {
-<<<<<<< HEAD
   transform: scale(1.1);  
   filter: brightness(0.7) contrast(0.8); 
 }
@@ -75,41 +61,21 @@ a {
 .contact-button {
   position: absolute;
   bottom: 20px; 
-=======
-  transform: scale(1.1); 
-  filter: brightness(0.7) contrast(0.8); 
-}
-
-/* Contact Button Overlay */
-.contact-button {
-  position: absolute;
-  bottom: 20px; 
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
   left: 50%;
   transform: translateX(-50%);
   font-size: 18px;
   color: #fff;
-<<<<<<< HEAD
   background-color: rgba(0, 123, 255, 0.7); 
-=======
-  background-color: rgba(0, 123, 255, 0.7); 
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
-<<<<<<< HEAD
   opacity: 0;  
   pointer-events: none; 
-=======
-  opacity: 0;  
-  pointer-events: none; 
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .contact-button:hover {
-<<<<<<< HEAD
   background-color: rgba(0, 123, 255, 1); 
 }
 
@@ -117,26 +83,12 @@ a {
   opacity: 1; 
   pointer-events: auto; 
   transform: translateX(-50%) translateY(-10px); 
-=======
-  background-color: rgba(0, 123, 255, 1); 
-}
-
-.profile-photo-container:hover .contact-button {
-  opacity: 1; 
-  pointer-events: auto; 
-  transform: translateX(-50%) translateY(-10px); 
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
 }
 
 /* Header Section */
 .header {
-<<<<<<< HEAD
   background: #000; 
   padding: 15px 0; 
-=======
-  background: #000; 
-  padding: 15px 0; 
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
   border-bottom: 1px solid #444;
 }
 
@@ -148,7 +100,6 @@ a {
 
 /* Logo */
 .logo {
-<<<<<<< HEAD
   color: blue; 
   font-size: 24px; 
 }
@@ -156,15 +107,6 @@ a {
 .logo img {
   width: 200px;  
   height: auto;  
-=======
-  color: blue; 
-  font-size: 24px; 
-}
-
-.logo img {
-  width: 200px;  
-  height: auto;   
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
 }
 
 .menu {
@@ -178,11 +120,7 @@ a {
 
 .menu a {
   color: #fff;
-<<<<<<< HEAD
   font-weight: bold; 
-=======
-  font-weight: bold; 
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
   font-size: 18px;
   transition: color 0.3s ease;
 }
@@ -204,7 +142,6 @@ a {
   align-items: center;
   text-align: center;
   height: 100vh;
-<<<<<<< HEAD
   background: #000; 
   color: #fff; 
 }
@@ -222,25 +159,6 @@ a {
 
 .home img:hover {
   transform: scale(1.1);  
-=======
-  background: #000; 
-  color: #fff; 
-}
-
-.home img {
-  width: 300px;  
-  height: 300px; 
-  transition: transform 0.3s ease; 
-  border: 5px solid transparent;  
-  padding: 5px;  
-  border-radius: 50%;  
-  background-clip: content-box;  
-  animation: borderMove 3s linear infinite; 
-}
-
-.home img:hover {
-  transform: scale(1.1);  
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
 }
 
 .home h1 {
@@ -260,24 +178,15 @@ a {
 /* About Section */
 .about {
   padding: 50px 0;
-<<<<<<< HEAD
   background: #000; 
   color: #fff; 
-=======
-  background: #000; 
-  color: #fff; 
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
   text-align: center;
 }
 
 .about h2 {
   font-size: 32px;
   margin-bottom: 20px;
-<<<<<<< HEAD
   color: #fff; 
-=======
-  color: #fff; 
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
 }
 
 .about p {
@@ -291,13 +200,8 @@ a {
 .portfolio {
   padding: 50px 0;
   text-align: center;
-<<<<<<< HEAD
   background: #000; 
   color: #fff; 
-=======
-  background: #000; 
-  color: #fff; 
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
 }
 
 .portfolio h2 {
@@ -329,19 +233,11 @@ a {
 .portfolio img {
   width: 100%;
   height: auto;
-<<<<<<< HEAD
   transition: filter 0.3s ease; 
 }
 
 .portfolio img:hover {
   filter: brightness(0.7) contrast(0.8); 
-=======
-  transition: filter 0.3s ease; 
-}
-
-.portfolio img:hover {
-  filter: brightness(0.7) contrast(0.8); 
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
 }
 
 .portfolio h3 {
@@ -361,13 +257,8 @@ a {
 .contact {
   padding: 50px 0;
   text-align: center;
-<<<<<<< HEAD
   background: #000; 
   color: #fff; 
-=======
-  background: #000; 
-  color: #fff; 
->>>>>>> 69a5493f2f5e6aced40e46c4f141d232f26604ef
 }
 
 .contact h2 {
