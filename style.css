@@ -1,0 +1,368 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #fff; /* White text for better contrast */
+  background-color: #000; /* Black background */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background: #007bff;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Profile Photo Container to hold both photo and the overlay text */
+.profile-photo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-photo {
+  width: 200px; /* Increased size to make the image bigger */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.1);  /* Slight zoom effect when hovered */
+  filter: brightness(0.7) contrast(0.8); /* Reduces brightness and contrast */
+}
+
+/* Contact Button Overlay */
+.contact-button {
+  position: absolute;
+  bottom: 20px; /* Adjust positioning based on your preference */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(0, 123, 255, 0.7); /* Blue background with some transparency */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0;  /* Initially hidden */
+  pointer-events: none; /* Ensures the button does not interfere with the image */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: rgba(0, 123, 255, 1); /* Solid blue when hovered */
+}
+
+.profile-photo-container:hover .contact-button {
+  opacity: 1; /* Make the text visible when hovering over the photo */
+  pointer-events: auto; /* Re-enable clicking when the button is visible */
+  transform: translateX(-50%) translateY(-10px); /* Optional: Add a slight upward movement for effect */
+}
+
+/* Header Section */
+.header {
+  background: #000; /* Black background */
+  padding: 15px 0; /* Increased padding to increase height */
+  border-bottom: 1px solid #444;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  color: blue; /* Set the color of the logo text to blue */
+  font-size: 24px; /* Optional: Adjust the font size if needed */
+}
+
+.logo img {
+  width: 200px;  /* Increased size to make the logo bigger */
+  height: auto;   /* Maintain aspect ratio */
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: #fff;
+  font-weight: bold; /* Make the menu items bold */
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #007bff;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+.home img {
+  width: 300px;  /* Increase the width to make the image bigger */
+  height: 300px; /* Ensure the height matches the width */
+  transition: transform 0.3s ease; /* Optional: Add transition effect */
+  border: 5px solid transparent;  /* Set an initial transparent border */
+  padding: 5px;  /* Add some space between the border and image */
+  border-radius: 50%;  /* Make the image a circle */
+  background-clip: content-box;  /* Make sure the border doesn't overlap the image */
+  animation: borderMove 3s linear infinite; /* Animation for moving border */
+}
+
+.home img:hover {
+  transform: scale(1.1);  /* Slight zoom effect when hovered */
+}
+
+.home h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.home span {
+  color: #ffd700;
+}
+
+.home p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+  padding: 50px 0;
+  background: #000; /* Black background */
+  color: #fff; /* White text */
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fff; /* Blue color */
+}
+
+.about p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #007bff; 
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 50px 0;
+  text-align: center;
+  background: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+.portfolio h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.portfolio .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portfolio .card {
+  background: #000;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Portfolio Image Hover Effect */
+.portfolio img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease; /* Smooth transition for the filter */
+}
+
+.portfolio img:hover {
+  filter: brightness(0.7) contrast(0.8); /* Reduces brightness and contrast */
+}
+
+.portfolio h3 {
+  padding: 10px;
+  color: #007bff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.project-name {
+  color: #ffd700;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 0;
+  text-align: center;
+  background: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact button:hover {
+  background: #0056b3;
+}
+
+/* Contact Links */
+.contact-links {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-links .btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background: #007bff;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.contact-links .btn:hover {
+  background: #0056b3;
+}
+
+.contact-links i {
+  font-size: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    width: 200px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Animation for moving border */
+@keyframes borderMove {
+  0% {
+    border-color: #ff0000;
+  }
+  25% {
+    border-color: #ff7f00;
+  }
+  50% {
+    border-color: #ffff00;
+  }
+  75% {
+    border-color: #00ff00;
+  }
+  100% {
+    border-color: #0000ff;
+  }
+}
